@@ -27,8 +27,8 @@ return [
    "meetings" => 'Meetings',
 	"quotes" => "Quotes",
 	
-   "my_account" => 'Mijn account',	
-   "change_password" => 'Wachtwoord wijzigen',			
+   "my_account" => 'My account',	
+   "change_password" => 'Change password',			
 
 	"create_case" => "Create a new case",
 	"list_cases" => "List cases",	
