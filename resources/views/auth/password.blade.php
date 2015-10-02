@@ -8,7 +8,7 @@
 <div class='block-content-inner'>
     <div class="row">
       <div class="col-md-10">
-        <img src="http://www.data2crm.com/migration/wp-content/uploads/2014/09/SuiteCRM-le-fork-open-source-de-SugarCRM-sign%C3%A9-SalesAgility_actualite_home.png" class="logo-name">
+        <img src="{{asset('img/logo.png')}}" class="logo-name">
                     <div class="clearfix">&nbsp;</div>
                    					@if (session('status'))
 						<div class="alert alert-success">
@@ -24,7 +24,7 @@
 								@endforeach
 							</ul>
 						</div>
-					@endif 
+					@endif
 
                     <div class="clearfix">&nbsp;</div>
 					<form role="form" method="POST" action="{{ url('/password/email') }}">

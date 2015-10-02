@@ -7,7 +7,7 @@
 <div class='block-content-inner'>
  <div class="row">
       <div class="col-md-12">
-       <img src="{{ url('img/logo.png') }}" class="logo-name">
+       <img src="{{asset('img/logo.png')}}" class="logo-name">
          <div class="clearfix">&nbsp;</div>
       			@if (count($errors) > 0)
 						<div class="alert alert-danger">
