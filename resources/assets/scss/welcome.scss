@@ -125,15 +125,15 @@ h5 {
   border-left: 1px solid #dedede;
   border-right: 1px solid #dedede;
   border-top: 1px solid #e6e6e6;
-  -webkit-block-shadow: 1px 4px 4px rgba(0, 0, 0, .2) !important;
-  -moz-block-shadow: 1px 4px 4px rgba(0, 0, 0, .2) !important;
-  block-shadow: 1px 4px 4px rgba(0, 0, 0, .2) !important;
+  -webkit-block-shadow: 1px 4px 4px rgba(0, 0, 0, .2);
+  -moz-block-shadow: 1px 4px 4px rgba(0, 0, 0, .2);
+  block-shadow: 1px 4px 4px rgba(0, 0, 0, .2);
   padding: 15px;
-  margin: 0 !important;
+  margin: 0;
 }
 
 .block .block-heading + .block-content-outer {
-  border-top: 0 !important;
+  border-top: 0;
 }
 
 .c-widget .c-widget-heading,
@@ -190,18 +190,18 @@ h5 {
   padding: 10px;
   clear: both;
   position: relative;
-  -moz-border-radius: 0 0 5px 5px !important;
-  -webkit-border-radius: 0 0 5px 5px !important;
-  border-radius: 0 0 5px 5px !important;
-  -webkit-block-shadow: 1px 4px 4px rgba(0, 0, 0, .2) !important;
-  -moz-block-shadow: 1px 4px 4px rgba(0, 0, 0, .2) !important;
-  block-shadow: 1px 4px 4px rgba(0, 0, 0, .2) !important;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+  -webkit-block-shadow: 1px 4px 4px rgba(0, 0, 0, .2);
+  -moz-block-shadow: 1px 4px 4px rgba(0, 0, 0, .2);
+  block-shadow: 1px 4px 4px rgba(0, 0, 0, .2);
 }
 
 .block.collapsed .block-heading {
-  -moz-border-radius: 0 0 5px 5px !important;
-  -webkit-border-radius: 0 0 5px 5px !important;
-  border-radius: 0 0 5px 5px !important;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
 }
 
 .block.collapsed .block-content-outer {
@@ -210,10 +210,10 @@ h5 {
 
 .block.collapsed .block-heading .block-controls .icon.block-control-collapse {
   color: $red;
-  -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
@@ -226,7 +226,7 @@ h5 {
 
 // Block Colors
 .block.highlight-color-purple {
-  border-bottom: 0 !important;
+  border-bottom: 0;
 }
 
 .block.highlight-color-purple .block-content-outer {

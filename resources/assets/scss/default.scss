@@ -171,15 +171,15 @@ a:active {
   border-left: 1px solid #dedede;
   border-right: 1px solid #dedede;
   border-top: 1px solid #e6e6e6;
-  -webkit-block-shadow: 1px 4px 4px rgba(0, 0, 0, .2) !important;
-  -moz-block-shadow: 1px 4px 4px rgba(0, 0, 0, .2) !important;
-  block-shadow: 1px 4px 4px rgba(0, 0, 0, .2) !important;
+  -webkit-block-shadow: 1px 4px 4px rgba(0, 0, 0, .2);
+  -moz-block-shadow: 1px 4px 4px rgba(0, 0, 0, .2);
+  block-shadow: 1px 4px 4px rgba(0, 0, 0, .2);
   padding: 15px;
-  margin: 0 !important;
+  margin: 0;
 }
 
 .block .block-heading + .block-content-outer {
-  border-top: 0 !important;
+  border-top: 0;
 }
 
 .c-widget .c-widget-heading,
@@ -236,18 +236,18 @@ a:active {
   padding: 10px;
   clear: both;
   position: relative;
-  -moz-border-radius: 0 0 5px 5px !important;
-  -webkit-border-radius: 0 0 5px 5px !important;
-  border-radius: 0 0 5px 5px !important;
-  -webkit-block-shadow: 1px 4px 4px rgba(0, 0, 0, .2) !important;
-  -moz-block-shadow: 1px 4px 4px rgba(0, 0, 0, .2) !important;
-  block-shadow: 1px 4px 4px rgba(0, 0, 0, .2) !important;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+  -webkit-block-shadow: 1px 4px 4px rgba(0, 0, 0, .2);
+  -moz-block-shadow: 1px 4px 4px rgba(0, 0, 0, .2);
+  block-shadow: 1px 4px 4px rgba(0, 0, 0, .2);
 }
 
 .block.collapsed .block-heading {
-  -moz-border-radius: 0 0 5px 5px !important;
-  -webkit-border-radius: 0 0 5px 5px !important;
-  border-radius: 0 0 5px 5px !important;
+  -moz-border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
 }
 
 .block.collapsed .block-content-outer {
@@ -278,7 +278,7 @@ a:active {
 .block.highlight-color-red,
 .block.highlight-color-lime,
 .block.highlight-color-purple {
-  border-bottom: 0 !important;
+  border-bottom: 0;
 }
 
 .block.highlight-color-green .block-content-outer {
@@ -350,11 +350,11 @@ a:active {
 
 // align icon
 .left-addon .glyphicon {
-  left: 0px;
+  left: 0;
 }
 
 .right-addon .glyphicon {
-  right: 0px;
+  right: 0;
 }
 
 // add padding
@@ -376,7 +376,7 @@ a:active {
 .btn-custom:focus,
 .btn-custom:active,
 .btn-custom.active {
-  background-color: #7a052e;
+  background-color: $dark-pink;
   border-color: #a02828;
   color: $white;
 
@@ -439,11 +439,11 @@ fieldset[disabled] .btn-custom.active {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: $white;
-  background-color: #7a052e;
-  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#7a052e), to(#7a052e));
-  background-image: -webkit-linear-gradient(top, #7a052e, 0%, #7a052e, 100%);
-  background-image: -moz-linear-gradient(top, #7a052e 0%, #7a052e 100%);
-  background-image: linear-gradient(to bottom, #7a052e 0%, #7a052e 100%);
+  background-color: $dark-pink;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from($dark-pink), to($dark-pink));
+  background-image: -webkit-linear-gradient(top, $dark-pink, 0%, $dark-pink, 100%);
+  background-image: -moz-linear-gradient(top, $dark-pink 0%, $dark-pink 100%);
+  background-image: linear-gradient(to bottom, $dark-pink 0%, $dark-pink 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffae2b2b', endColorstr='#ffcf3e3e', GradientType=0);
 }
@@ -482,7 +482,7 @@ fieldset[disabled] .btn-custom.active {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #7a052e;
+  background-color: $dark-pink;
   color: $white;
 }
 
@@ -553,7 +553,7 @@ fieldset[disabled] .btn-custom.active {
 // Sidebar Styles
 
 .sidebar-nav {
-  background-color: #7a052e;
+  background-color: $dark-pink;
   position: absolute;
   top: 0;
   width: 250px;
@@ -570,7 +570,7 @@ fieldset[disabled] .btn-custom.active {
 .sidebar-nav li a {
   display: block;
   text-decoration: none;
-  color: #999999;
+  color: $gray;
 }
 
 .sidebar-nav li a:hover {
@@ -599,7 +599,7 @@ fieldset[disabled] .btn-custom.active {
   background: none;
 }
 
-/* collapsed sidebar styles */
+// collapsed sidebar styles
 @media screen and (max-width: 767px) {
   .row-offcanvas {
     position: relative;
