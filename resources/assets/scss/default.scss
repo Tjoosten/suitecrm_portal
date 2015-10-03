@@ -90,7 +90,7 @@ a:active {
   border-bottom: 1px solid #cccccc
 }
 
-/* ERROR & LOGIN & LOCKSCREEN*/
+// ERROR & LOGIN & LOCKSCREEN.
 .middle-box {
   max-width: 400px;
   z-index: 100;
@@ -171,9 +171,9 @@ a:active {
   border-left: 1px solid #dedede;
   border-right: 1px solid #dedede;
   border-top: 1px solid #e6e6e6;
-  -webkit-block-shadow: 1px 4px 4px rgba(0, 0, 0, 0.2) !important;
-  -moz-block-shadow: 1px 4px 4px rgba(0, 0, 0, 0.2) !important;
-  block-shadow: 1px 4px 4px rgba(0, 0, 0, 0.2) !important;
+  -webkit-block-shadow: 1px 4px 4px rgba(0, 0, 0, .2) !important;
+  -moz-block-shadow: 1px 4px 4px rgba(0, 0, 0, .2) !important;
+  block-shadow: 1px 4px 4px rgba(0, 0, 0, .2) !important;
   padding: 15px;
   margin: 0 !important;
 }
@@ -215,13 +215,13 @@ a:active {
 
 .block .block-heading .block-controls > .icon {
   float: right;
-  opacity: 0.5;
+  opacity: .5;
   margin: 0 0 0 4px;
   cursor: pointer;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
 }
 
 .block .block-heading .block-controls .icon:hover {
@@ -230,19 +230,18 @@ a:active {
 
 .block .block-content-outer {
   background: none repeat scroll 0 0 $white;
-  border-left: 1px solid #dedede;
-  border-right: 1px solid #dedede;
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 3px solid #4596f1;
+  border: 1px solid #dedede;
+  border-top-color: #e6e6e6;
+  border-bottom: 3px #4596f1;
   padding: 10px;
   clear: both;
   position: relative;
   -moz-border-radius: 0 0 5px 5px !important;
   -webkit-border-radius: 0 0 5px 5px !important;
   border-radius: 0 0 5px 5px !important;
-  -webkit-block-shadow: 1px 4px 4px rgba(0, 0, 0, 0.2) !important;
-  -moz-block-shadow: 1px 4px 4px rgba(0, 0, 0, 0.2) !important;
-  block-shadow: 1px 4px 4px rgba(0, 0, 0, 0.2) !important;
+  -webkit-block-shadow: 1px 4px 4px rgba(0, 0, 0, .2) !important;
+  -moz-block-shadow: 1px 4px 4px rgba(0, 0, 0, .2) !important;
+  block-shadow: 1px 4px 4px rgba(0, 0, 0, .2) !important;
 }
 
 .block.collapsed .block-heading {
@@ -310,7 +309,7 @@ a:active {
   border-bottom: 3px solid $pink;
 }
 
-/* Block Sizes */
+// Block Sizes
 .block .block-content-outer .block-content-inner {
   min-height: 300px;
   margin-left: 55px;
@@ -577,7 +576,7 @@ fieldset[disabled] .btn-custom.active {
 .sidebar-nav li a:hover {
   text-decoration: none;
   color: $white;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, .2);
 }
 
 .sidebar-nav li a:active,
@@ -604,9 +603,9 @@ fieldset[disabled] .btn-custom.active {
 @media screen and (max-width: 767px) {
   .row-offcanvas {
     position: relative;
-    -webkit-transition: all 0.25s ease-out;
-    -moz-transition: all 0.25s ease-out;
-    transition: all 0.25s ease-out;
+    -webkit-transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out;
+    transition: all .25s ease-out;
   }
 
   .row-offcanvas-right
@@ -640,7 +639,7 @@ fieldset[disabled] .btn-custom.active {
 
 // Cases page
 ul.padding li {
-  padding: 0.2em 0;
+  padding: .2em 0;
 }
 
 .case-header {
