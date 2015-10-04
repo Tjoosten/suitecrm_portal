@@ -1,4 +1,14 @@
 @extends('app')
+@section('sidebar')
+<ul class="nav">
+  <li><a href="{{ url('cases') }}"><?php echo Lang::get('aop.case_status_all');?></a></li>
+  <li><a href="{{ url('cases') }}"><?php echo Lang::get('aop.case_status_open');?></a></li>
+  <li><a href="{{ url('cases') }}"><?php echo Lang::get('aop.case_status_closed');?></a></li>
+  <li role="separator" class="divider"></li>
+  <li><a href="{{ url('cases/create') }}"><?php echo Lang::get('aop.create_case'); ?></a></li>
+</ul>
+@endsection
+
 @section('content')
 <div class="page-header"><h2><?php echo Lang::get('aop.create_case');?></h2> </div>
 <form action="" method="post" enctype="multipart/form-data" class="well well-sm">

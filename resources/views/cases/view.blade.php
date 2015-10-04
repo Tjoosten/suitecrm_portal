@@ -1,11 +1,21 @@
 @extends('app')
+@section('sidebar')
+<ul class="nav">
+  <li><a href="{{ url('cases') }}"><?php echo Lang::get('aop.case_status_all');?></a></li>
+  <li><a href="{{ url('cases') }}"><?php echo Lang::get('aop.case_status_open');?></a></li>
+  <li><a href="{{ url('cases') }}"><?php echo Lang::get('aop.case_status_closed');?></a></li>
+  <li role="separator" class="divider"></li>
+  <li><a href="{{ url('cases/create') }}"><?php echo Lang::get('aop.create_case'); ?></a></li>
+</ul>
+@endsection
+
 @section('content')
 <div class="page-header"><h2>Case - #5864452</h2></div>
 <div class="bottom case-header">
       <span class="pull-right">
-      <button type="button" data-toggle="modal" data-target="#CloseCase" data-backdrop="false"  class="btn btn-custom btn-sm">Close ticket</button>  
+      <button type="button" data-toggle="modal" data-target="#CloseCase" data-backdrop="false"  class="btn btn-custom btn-sm">Close ticket</button>
       </span>
-      
+
         <div class="modal" id="CloseCase" tabindex="-1" role="dialog" aria-labelledby="CloseCase">
        <div class="modal-dialog" role="document">
          <div class="modal-content">
@@ -22,7 +32,7 @@
       </div>
     </div>
   </div>
-</div> 
+</div>
 
     <ul class="list-unstyled padding">
     <li class="row">
@@ -90,27 +100,27 @@ Het wijzigen van DNS records dient te geschieden door de klant zelfs via het con
           </div>
   </div>
 </div>
-    </div>          
-    
+    </div>
+
 <script type="text/javascript">
-$(function () {			
+$(function () {
                     $('a[data-toggle="collapse"]').on('click',function(){
-				
+
 				var objectID=$(this).attr('href');
-				
+
 				if($(objectID).hasClass('in'))
 				{
                                     $(objectID).collapse('hide');
 				}
-				
+
 				else{
                                     $(objectID).collapse('show');
 				}
                     });
-                    
-                    
+
+
                     $('#expandAll').on('click',function(){
-                        
+
                         $('a[data-toggle="collapse"]').each(function(){
                             var objectID=$(this).attr('href');
                             if($(objectID).hasClass('in')===false)
@@ -119,17 +129,17 @@ $(function () {
                             }
                         });
                     });
-                    
+
                     $('#collapseAll').on('click',function(){
-                        
+
                         $('a[data-toggle="collapse"]').each(function(){
                             var objectID=$(this).attr('href');
                             $(objectID).collapse('hide');
                         });
                     });
-                    
+
 		});
 
-$('#CloseCase').appendTo("body")		
-</script>   
+$('#CloseCase').appendTo("body")
+</script>
 @endsection

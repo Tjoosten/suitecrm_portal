@@ -6,12 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Laravel SuiteCRM Advanced Open Portal</title>
 
-	<!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
-   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-	<link href="{{asset('css/default.css')}}" rel="stylesheet">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type='text/css'>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type='text/css'>
+	<link href="{{asset('css/default.css')}}" rel="stylesheet" type='text/css'>
 
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
@@ -82,11 +80,7 @@
 
         <!-- sidebar -->
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
-            <ul class="nav">
-              <li class="active"><a href="{{ url('/') }}"><i class="fa fa-home fa-lg"></i> <?php echo Lang::get('aop.home'); ?></a></li>
-              <li><a href="{{ url('cases') }}"><i class="fa fa-support fa-lg"></i> <?php echo Lang::get('aop.cases'); ?></a></li>
-              <li><a href="{{ url('quotes')}}"><i class="fa fa-file-pdf-o fa-lg"></i> <?php echo Lang::get('aop.quotes'); ?></a></li>
-            </ul>
+            @yield('sidebar')
         </div>
 
         <!-- main area -->
