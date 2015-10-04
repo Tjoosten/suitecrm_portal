@@ -2,6 +2,7 @@
 
 [![Join the chat at https://gitter.im/ghermans/suitecrm_laravel](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ghermans/suitecrm_laravel?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](LICENSE)
+[![Latest Version](https://img.shields.io/github/tag/Ghermans/suite_crm.svg?style=flat&label=release)](https://github.com/ghermans/suite_crm/tags)
 
 Advanced Open Portal integrated in Laravel 5 (original Joomla component https://github.com/salesagility/SuiteCRM-Portal-Joomla)
 
