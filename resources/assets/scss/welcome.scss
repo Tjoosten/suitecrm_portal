@@ -302,7 +302,7 @@ fieldset[disabled] .btn-custom:hover,
 fieldset[disabled] .btn-custom:focus,
 fieldset[disabled] .btn-custom:active,
 fieldset[disabled] .btn-custom.active {
-  background-color: #c93232;
-  border-color: #c93232;
+  background-color: $darker-red;
+  border-color: $darker-red;
   color: $white;
 }
